@@ -13,6 +13,7 @@
  */
 package org.jhotdraw.samples.svg.gui;
 
+import dk.sdu.mmmi.featuretracer.lib.FeatureEntryPoint;
 import org.jhotdraw.text.JavaNumberFormatter;
 import javax.swing.border.*;
 import org.jhotdraw.gui.*;
@@ -22,6 +23,7 @@ import javax.swing.*;
 import javax.swing.plaf.LabelUI;
 import javax.swing.plaf.SliderUI;
 import javax.swing.plaf.TextUI;
+import org.jhotdraw.app.JHotDrawFeatures;
 import org.jhotdraw.draw.action.*;
 import org.jhotdraw.gui.plaf.palette.*;
 import org.jhotdraw.text.ColorFormatter;
@@ -41,11 +43,12 @@ public class CanvasToolBar extends AbstractToolBar {
         setName(labels.getString(getID() + ".toolbar"));
         setDisclosureStateCount(3);
     }
-
+    
+@FeatureEntryPoint(JHotDrawFeatures.CANVAS_TOOL_BAR)
     @Override
     protected JComponent createDisclosedComponent(int state) {
         JPanel p = null;
-
+        
         switch (state) {
             case 1:
                  {

@@ -22,6 +22,7 @@ public class JHotDrawFeatures {
     public static final String SELECTION_TOOL = "selection tool";
     public static final String LINE_TOOL = "line tool";
     public static final String BEZIER_TOOL = "scribble tool";
+    public static final String CANVAS_TOOL_BAR = "canvas tool bar";
     public static final String RECTANGLE_TOOL = "rectangle tool";
     public static final String ELLIPSE_TOOL = "ellipse tool";
     public static final String TEXT_TOOL = "text tool";
